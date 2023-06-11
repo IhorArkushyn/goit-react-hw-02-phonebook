@@ -16,7 +16,6 @@ class App extends Component {
     filter: '',
   };
 
-  // Добавляет контакт в список
   addContact = ({ name, number }) => {
     const normalizedFind = name.toLowerCase();
     const findName = this.state.contacts.find(
@@ -38,7 +37,6 @@ class App extends Component {
     }));
   };
 
-  // Возвращает результат фильтра
   getContacts = () => {
     const { filter, contacts } = this.state;
     const normalizedFilter = filter.toLowerCase();
@@ -47,7 +45,6 @@ class App extends Component {
     );
   };
 
-  // Удаляет контакт из списка
   deleteContact = contactId => {
     this.setState(prevState => ({
       contacts: prevState.contacts.filter(contact => contact.id !== contactId),
