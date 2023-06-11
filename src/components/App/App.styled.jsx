@@ -10,14 +10,10 @@ export const Section = styled.section`
   }
 `;
 
-export const TitleH1 = styled.h1`
+export const SectionTitle = styled.h1`
   margin-bottom: 15px;
+  text-transform: uppercase;
   font-size: 24px;
-  font-weight: bold;
-`;
-
-export const TitleH2 = styled.h2`
-  margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: bold;
+  color: hsl(200deg 48% 86%);
+  text-shadow: 2px 2px 5px black;
 `;

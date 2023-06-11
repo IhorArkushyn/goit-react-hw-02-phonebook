@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
-// import { Container, Section, TitleH1, TitleH2 } from './App.styled';
 import * as S from './App.styled';
 
 class App extends Component {
@@ -67,11 +66,11 @@ class App extends Component {
     return (
       <S.Container>
         <S.Section title="Phonebook">
-          <S.TitleH1>Phonebook</S.TitleH1>
+          <S.SectionTitle>Phonebook</S.SectionTitle>
           <ContactForm onSubmit={this.addContact} />
         </S.Section>
         <S.Section title="Contacts">
-          <S.TitleH2>Contacts</S.TitleH2>
+          <S.SectionTitle>Contacts</S.SectionTitle>
           <Filter value={filter} onChange={this.handleFilter} />
           <ContactList
             contacts={visibleContacts}
